@@ -2,24 +2,19 @@
 #define __SCORES_SCENE_H__
 
 #include "MenuScene.h"
-#include "cocos2d.h"
-#include "ui\CocosGUI.h"
-#include <iostream>
 
-class ScoresScene : public cocos2d::Layer, Visible{
+class ScoresScene : public cocos2d::Layer{
 public:
   static cocos2d::Scene* createScene();
   virtual bool init();
-  void menuCloseCallback(cocos2d::Ref* pSender);
   
   CREATE_FUNC(ScoresScene);
 
-  cocos2d::Sprite *spriteArrow;
-  
-  void GoBackToMenu(Ref *pSender);
-  void Highscores(Ref *pSender);
+  LabelCreator titleLabel;
+  std::vector<MenuItemCreator> menuItem;
 
-  //void textFieldHandler(ui::TextField *sender, ui::TextField::EventType type);
+  void goBackToMenu(cocos2d::Ref *pSender);
+  void highscores(cocos2d::Ref *pSender);
 };
 
 #endif // __SCORES_SCENE_H__
