@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "android.overmobile.tower",
+    "sha256_cert_fingerprints":
+    ["F6:31:C9:5E:36:72:F9:5F:83:03:C1:12:35:F7:24:40:99:3F:89:62:66:C2:74:76:A4:4A:C6:3A:A7:51:05:66"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://github.com"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "android.overmobile.tower",
+    "sha256_cert_fingerprints":
+    ["F6:31:C9:5E:36:72:F9:5F:83:03:C1:12:35:F7:24:40:99:3F:89:62:66:C2:74:76:A4:4A:C6:3A:A7:51:05:66"]
+  }
+}]
